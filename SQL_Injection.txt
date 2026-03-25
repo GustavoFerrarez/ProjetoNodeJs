@@ -1,0 +1,3 @@
+O que é SQL Injection? É uma vulnerabilidade onde um atacante insere comandos SQL maliciosos em campos de entrada (formulários), que acabam sendo executados pelo banco de dados. Isso pode permitir o roubo de dados ou a destruição de tabelas.
+
+Como protegemos o código? Utiliza Prepared Statements (consultas preparadas) com o caractere "?". Em vez de concatenar strings diretamente na query, os valores são enviados separadamente. O driver do banco de dados trata esses valores como dados puros, e não como parte do comando SQL, neutralizando qualquer tentativa de injeção.
